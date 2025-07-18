@@ -1,0 +1,778 @@
+2025-07-15T17:09:53,367 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:09:57,256 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4963,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:09:58,593 [main] INFO  (BaseTest.java:31) - java.lang.AssertionError: 1 expectation failed.
+JSON path booking.firstname doesn't match.
+Expected: Jim
+  Actual: Armin
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.testing.automation.tests.CreateBookingRequest.createBooking(CreateBookingRequest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2025-07-15T17:09:58,609 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:10:00,155 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4981,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:10:00,187 [main] INFO  (BaseTest.java:31) - java.lang.AssertionError: 1 expectation failed.
+JSON path booking.firstname doesn't match.
+Expected: Jim
+  Actual: Sushant
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.testing.automation.tests.CreateBookingRequest.createBooking(CreateBookingRequest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2025-07-15T17:10:00,202 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:10:01,774 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5001,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:10:01,806 [main] INFO  (BaseTest.java:31) - java.lang.AssertionError: 1 expectation failed.
+JSON path booking.firstname doesn't match.
+Expected: Jim
+  Actual: Shital
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.testing.automation.tests.CreateBookingRequest.createBooking(CreateBookingRequest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2025-07-15T17:11:35,647 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:11:39,351 [TestNG-test=Smoke Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 485,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:11:40,485 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:11:40,579 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:11:41,954 [TestNG-test=Smoke Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 507,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:11:42,010 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:11:42,016 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:11:43,567 [TestNG-test=Smoke Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 523,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:11:43,614 [TestNG-test=Smoke Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:29:58,139 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:30:01,895 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4885,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:30:02,981 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:30:03,086 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:30:04,510 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4906,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:30:04,558 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:30:04,558 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:30:05,993 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4924,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:30:06,035 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:32:08,660 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:32:12,106 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 521,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:32:13,102 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:32:13,222 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:32:14,750 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 544,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:32:14,803 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:32:14,811 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:32:16,395 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 563,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:32:16,441 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:38:26,032 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:38:29,702 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3684,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:38:30,855 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:38:30,958 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:38:32,094 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3712,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:38:32,139 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:38:32,144 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:38:33,530 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3725,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:38:33,582 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:45:58,950 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:46:02,528 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2815,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:46:03,719 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:46:03,801 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:46:05,327 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2839,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:46:05,387 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:46:05,393 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:46:06,961 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2857,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:46:07,006 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:49:52,465 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:49:56,408 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4851,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:49:57,489 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:49:57,572 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:49:58,923 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4875,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:49:58,973 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:49:58,980 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:50:00,260 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4886,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:50:00,306 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:50:13,012 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:50:16,695 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5045,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:50:17,877 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:50:17,992 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:50:19,392 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5070,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:50:19,435 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:50:19,441 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:50:20,926 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5082,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:50:20,971 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:52:44,813 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:52:48,759 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 1180,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:52:49,799 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:52:49,889 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:52:51,249 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 1206,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:52:51,298 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:52:51,305 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:52:52,890 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 1224,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:52:52,939 [TestNG-test=Sanity Tests-1] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:58:21,753 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:58:25,587 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Armin","lastname":"A","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4064,
+    "booking": {
+        "firstname": "Armin",
+        "lastname": "A",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:58:26,633 [main] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:58:26,659 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:58:28,152 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"B","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4087,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "B",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:58:28,196 [main] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
+2025-07-15T17:58:28,208 [main] INFO  (CreateBookingRequest.java:43) - createBooking test execution started...
+2025-07-15T17:58:29,783 [main] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"C","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4101,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "C",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-15T17:58:29,833 [main] INFO  (CreateBookingRequest.java:85) - createBooking test execution completed...
