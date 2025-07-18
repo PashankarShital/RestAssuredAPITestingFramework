@@ -1,0 +1,301 @@
+2025-07-17T12:09:51,205 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:09:51,284 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:09:55,470 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"api","lastname":"automation","totalprice":2000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4761,
+    "booking": {
+        "firstname": "api",
+        "lastname": "automation",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:09:55,490 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:09:55,490 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:09:57,035 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"ui","lastname":"automation","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4775,
+    "booking": {
+        "firstname": "ui",
+        "lastname": "automation",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:09:57,035 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:09:57,047 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:09:58,452 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"fullstack","lastname":"automation","totalprice":4000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 4788,
+    "booking": {
+        "firstname": "fullstack",
+        "lastname": "automation",
+        "totalprice": 4000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:09:58,452 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:56:25,090 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:56:29,193 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"api","lastname":"automation","totalprice":2000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2963,
+    "booking": {
+        "firstname": "api",
+        "lastname": "automation",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:56:29,225 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:56:29,303 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:56:30,546 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"ui","lastname":"automation","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2980,
+    "booking": {
+        "firstname": "ui",
+        "lastname": "automation",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:56:30,548 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:56:30,557 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:56:32,074 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"fullstack","lastname":"automation","totalprice":4000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 2998,
+    "booking": {
+        "firstname": "fullstack",
+        "lastname": "automation",
+        "totalprice": 4000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:56:32,074 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:57:51,570 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:57:55,420 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"api","lastname":"automation","totalprice":2000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3698,
+    "booking": {
+        "firstname": "api",
+        "lastname": "automation",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:57:55,441 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:57:55,514 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:57:57,042 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"ui","lastname":"automation","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3716,
+    "booking": {
+        "firstname": "ui",
+        "lastname": "automation",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:57:57,042 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T12:57:57,055 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:43) - Create booking using csv test execution started...
+2025-07-17T12:57:58,409 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"fullstack","lastname":"automation","totalprice":4000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 3729,
+    "booking": {
+        "firstname": "fullstack",
+        "lastname": "automation",
+        "totalprice": 4000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T12:57:58,409 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingCSV.java:67) - Create booking using csv test execution completed...
+2025-07-17T17:10:18,815 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:10:22,660 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"automation","totalprice":2000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5334,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "automation",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:10:22,685 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
+2025-07-17T17:10:22,786 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:10:24,119 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"automation","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5347,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "automation",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:10:24,121 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
+2025-07-17T17:10:24,130 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:10:25,347 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Pashankar","lastname":"automation","totalprice":4000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 5362,
+    "booking": {
+        "firstname": "Pashankar",
+        "lastname": "automation",
+        "totalprice": 4000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:10:25,349 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
+2025-07-17T17:11:06,781 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:11:10,313 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Shital","lastname":"automation","totalprice":2000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 331,
+    "booking": {
+        "firstname": "Shital",
+        "lastname": "automation",
+        "totalprice": 2000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:11:10,336 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
+2025-07-17T17:11:10,404 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:11:11,839 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Sushant","lastname":"automation","totalprice":3000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 349,
+    "booking": {
+        "firstname": "Sushant",
+        "lastname": "automation",
+        "totalprice": 3000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:11:11,841 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
+2025-07-17T17:11:11,853 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:34) - Create booking using csv test execution started...
+2025-07-17T17:11:13,171 [TestNG-test=Sanity Tests-1] ERROR (RestAssuredListener.java:24) - 
+ Request Method => POST
+ Request URI => https://restful-booker.herokuapp.com
+ Request Body => {"firstname":"Pashankar","lastname":"automation","totalprice":4000,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+ Response Body => {
+    "bookingid": 364,
+    "booking": {
+        "firstname": "Pashankar",
+        "lastname": "automation",
+        "totalprice": 4000,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+2025-07-17T17:11:13,172 [TestNG-test=Sanity Tests-1] INFO  (DataDrivenTestingUsingExcel.java:58) - Create booking using csv test execution completed...
